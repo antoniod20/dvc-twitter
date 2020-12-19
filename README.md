@@ -1,6 +1,6 @@
 # Reproducible pipeline from Twitter API using DVC
 
-In this project I built a pipeline using DVC from my previously created notebook, called the Twitter API. ([link](https://colab.research.google.com/drive/1zMdbSovvxC8_a50KMAm3EAt9rDiJQZXK?usp=sharing))
+In this project I built a pipeline using DVC from my previously created notebook, called the [Twitter API](https://colab.research.google.com/drive/1zMdbSovvxC8_a50KMAm3EAt9rDiJQZXK?usp=sharing).
 Due to the size of my notebook, I only put the most important parts of my work into the pipeline.
 This parts are:
  - Creation of dataset (I reduced the size of the dataset due to time reasons)
