@@ -39,7 +39,7 @@ git clone https://github.com/antoniod20/dvc-twitter.git
 The project was carried out with Python 3.6.9. It is therefore advisable to have a version of Python at least higher than version 3 installed.
 To install all the libraries needed to run the project, it is necessary to run this command line:
 ```sh
-    pip install -r src/requirements.txt
+pip install -r src/requirements.txt
 ```
 
 ## Run
