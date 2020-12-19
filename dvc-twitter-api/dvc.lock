@@ -1,0 +1,39 @@
+fetch:
+  cmd: python src/fetch.py
+  deps:
+  - path: src/fetch.py
+    md5: ac15f05d3d9a661e6a89db640cddfc55
+    size: 10069
+  outs:
+  - path: data/fetch
+    md5: 52c4940e8822f07d8dc07d6d5a55279d.dir
+    size: 3948
+    nfiles: 1
+graph:
+  cmd: python src/graph.py data/fetch/followers.csv
+  deps:
+  - path: data/fetch/followers.csv
+    md5: b6d673b03259dbf8e5b17be320c347e8
+    size: 3948
+  - path: src/graph.py
+    md5: a73b9cc88666003ffd3d550cc9f26a06
+    size: 627
+  outs:
+  - path: data/graph
+    md5: 29faa749b44e71bbe3095c76232760af.dir
+    size: 12133
+    nfiles: 1
+egonetwork:
+  cmd: python src/egonetwork.py data/graph/graph.json
+  deps:
+  - path: data/graph/graph.json
+    md5: d97b5ba123344be2a4ad51a6a20c07f3
+    size: 12133
+  - path: src/egonetwork.py
+    md5: ed3ec7cd112d4d84517d89c2954b98f6
+    size: 1478
+  outs:
+  - path: data/egonetwork
+    md5: f4deb8c7bec7bc7c5e9c7f79fa00b0d0.dir
+    size: 2462179
+    nfiles: 2

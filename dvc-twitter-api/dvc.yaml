@@ -1,0 +1,21 @@
+stages:
+  fetch:
+    cmd: python src/fetch.py
+    deps:
+    - src/fetch.py
+    outs:
+    - data/fetch
+  graph:
+    cmd: python src/graph.py data/fetch/followers.csv
+    deps:
+    - data/fetch/followers.csv
+    - src/graph.py
+    outs:
+    - data/graph
+  egonetwork:
+    cmd: python src/egonetwork.py data/graph/graph.json
+    deps:
+    - data/graph/graph.json
+    - src/egonetwork.py
+    outs:
+    - data/egonetwork
