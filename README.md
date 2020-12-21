@@ -44,7 +44,12 @@ pip install -r src/requirements.txt
 
 ## Run
 
-To launch the pipeline, the following code must be run:
+To launch the pipeline, the following steps must be run:
+- First command
+```sh
+cd .\dvc-twitter\dvc-twitter-api\
+```
+- Second command
 ```sh
 dvc repro
 ```
