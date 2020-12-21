@@ -5,11 +5,12 @@ import csv
 import os
 from datetime import datetime
 
-API_KEY = input("Insert API Key: ")
-API_SECRET_KEY = input("Insert API Secret Key: ")
+API_KEY = "8ilH0Z268J2vt2aldWg5PvJPm"
+API_SECRET_KEY = "4wjoqOLIxeDo169jArioDw2fMFFAvRbWooPdQhnxwk3pax6X3C"
 
 auth = tweepy.OAuthHandler(API_KEY, API_SECRET_KEY, 'oob')
 redirect_url = auth.get_authorization_url()
+print("Open this link and log in with your Twitter profile.")
 print(redirect_url)
 
 USER_PIN = input("What's the pin value? ")
